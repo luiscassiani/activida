@@ -22,6 +22,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { authInterceptorProviders } from './services/auth.interceptor';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 import { UserDashboardComponent } from './pages/user/user-dashboard/user-dashboard.component';
+import { HomeModule } from './pages/home/home.module';
 
 @NgModule({
   declarations: [
@@ -45,8 +46,8 @@ import { UserDashboardComponent } from './pages/user/user-dashboard/user-dashboa
     FormsModule,
     MatCardModule,
     MatToolbarModule,
-    MatIconModule
-
+    MatIconModule,
+     HomeModule
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
